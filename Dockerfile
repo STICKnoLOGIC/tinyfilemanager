@@ -17,7 +17,7 @@ USER root
 # if run in China
 # RUN sed -i 's/dl-cdn.alpinelinux.org/://aliyun.com' /etc/apk/repositories
 
-RUN install-php-extensions gd zip fileinfo 
+RUN install-php-extensions gd
 
 WORKDIR /var/www/html
 
